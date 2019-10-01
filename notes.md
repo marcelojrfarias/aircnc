@@ -14,10 +14,14 @@
 
 ## Instalar o Visual Studio Code
 * [Fazer Download e Instalar](https://code.visualstudio.com/)
-Extensões:
+
+### Personalização do vscode
+
+#### Extensões
 * Dracula
 * Material Icon Theme
-Fontes:
+
+#### Fontes
 * [FiraCode](https://github.com/tonsky/FiraCode)
 
 # Extras
