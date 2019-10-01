@@ -25,4 +25,4 @@
 * [FiraCode](https://github.com/tonsky/FiraCode)
 
 # Extras
-* Alternativa ao Sketch (macOS) para Windwos: https://www.figma.com/
+* Alternativa ao Sketch (macOS) para Windows: [Figma](https://www.figma.com/)
