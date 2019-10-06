@@ -29,6 +29,10 @@ const SpotSchema = new mongoose.Schema({
 });
 
 SpotSchema.virtual('thumbnail_url').get(function () {
+    return `http://192.168.15.2:3333/files/${this.thumbnail}`
+});
+
+SpotSchema.virtual('thumbnail_url_local').get(function () {
     return `http://localhost:3333/files/${this.thumbnail}`
 });
 
