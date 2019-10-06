@@ -1,6 +1,9 @@
 // Modules import
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
+
+const path = require('path');
 
 // Import the routes
 const routes = require('./routes');
@@ -12,6 +15,11 @@ mongoose.connect('mongodb+srv://tindev:tindev@tindev-7cgk9.mongodb.net/aircnc?re
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
+
+// Tell to express to use CORS
+app.use(cors());
+
+app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads')));
 
 // Tell to express to use json on request
 app.use(express.json());
