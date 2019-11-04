@@ -22,6 +22,12 @@ const DashboardController = require('./controllers/DashboardController')
 // Import the Session creator route 
 const BookingController = require('./controllers/BookingController')
 
+// Import the Session creator route 
+const ApprovalController = require('./controllers/ApprovalController')
+
+// Import the Session creator route 
+const RejectionController = require('./controllers/RejectionController')
+
 // GET, POST, PUT, DELETE
 // req.query = Query params (to filters)
 // req.params = Route params (to edit, create)
@@ -33,6 +39,9 @@ routes.get('/spots', SpotController.index);
 routes.get('/dashboard', DashboardController.show);
 
 routes.post('/spots/:spot_id/bookings', BookingController.store);
+
+routes.post('/bookings/:booking_id/approvals', ApprovalController.store)
+routes.post('/bookings/:booking_id/rejections', RejectionController.store)
 
 // Exports the routes module
 module.exports = routes;
